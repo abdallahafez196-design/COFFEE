@@ -20,7 +20,9 @@ header {
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
+
+gap:clamp(2rem,5vw,6rem);
     align-items: center;
 
     img {
@@ -301,29 +303,26 @@ header {
 }
 
 
-   Cards
 
 .features {
-
     width: calc(100% - 4rem);
+    max-width: 1110px;
 
     position: absolute;
-
     left: 50%;
-
     transform: translateX(-50%);
-
     bottom: -10rem;
 
     display: flex;
-
-    justify-content: space-between;
+    justify-content: center;
 
     align-items: stretch;
+    gap: 30px;
 
     flex-wrap: nowrap;
 
-    gap: clamp(1.5rem, 2vw, 2rem);
+
+   
 }
 @media (max-width: 992px) {
   .features {
@@ -346,7 +345,8 @@ header {
 }
 
 .feature-card {
-  flex: 1 1 0;
+    width: calc((100% - 60px) / 3);
+  flex: unset;
 
   max-width: 350px;
   min-width: 0;
@@ -595,7 +595,7 @@ header {
     }
 }
 
-/* Tablet */
+
 
 @media(max-width:992px){
 
@@ -649,7 +649,9 @@ header {
         padding: clamp(2rem,4vw,3rem);
 
         display: flex;
-        justify-content: space-between;
+         
+
+        gap: 60px;
         align-items: center;
 
         border-radius: 10px;
@@ -662,6 +664,10 @@ header {
 
     display: flex;
     gap: clamp(1.5rem,3vw,2.5rem);
+     margin-right: auto;
+
+    display: flex;
+    gap: 32px;
 
     a {
 
@@ -690,9 +696,10 @@ header {
 
 .footer-social{
 
-    display:flex;
 
-    gap:1.5rem;
+    
+      display: flex;
+    gap: 24px;
 
     a{
 
@@ -731,7 +738,6 @@ header {
 }
 
 }
-@media (max-width:767px){
 
 .footer{
 
@@ -756,4 +762,3 @@ header {
     margin-top:1rem;
 }
 
-}
